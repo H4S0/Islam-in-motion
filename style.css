@@ -143,4 +143,19 @@ body{
 		font-size: 18px;
 	}
 }
+
+i {
+	font-size: 2.3rem;
+	letter-spacing: 7px;
+	margin-top: 2.7rem;
+	padding-right: 3px;
+	color: #50A7FF;
+   }
+   
+	h6{
+	font-size: 22px;
+	margin-top: 3rem;
+	color: #ffffff;
+  
+   }
       
