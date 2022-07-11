@@ -1,0 +1,101 @@
+body{
+    background: #2F3238;
+    margin: 5rem;
+    padding: 2rem;
+  }
+   .services .content{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .title h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2px;
+  }
+  
+  .title p{
+    font-size: 18px;
+    width: 80%;
+    color: #fff;
+  }
+  
+  
+  .services .content .card{
+    background: #50A7FF;
+    width: 400px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+  }
+  
+  .services .content .card .service-icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .services .content .card:hover .service-icon{
+    transform: translateY(-10px);
+  }
+  
+  .services .content .card .info{
+    text-align: center;
+  }
+  
+  .services .content .card .info h3{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+.crta p{
+    color: #fff;
+    margin-top: -1rem;
+}
+
+.crta1 p{
+    color: #fff;
+    margin-top: -1rem;
+}
+
+.info p{
+  color: #fff;
+  font-weight: bold;
+  font-size:medium;
+}
+
+.nijet1 h1{
+  color: #50A7FF;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.nijet1 p{
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size:  large;
+  text-align: center;
+}
+
+.nijet2 h1{
+  color: #50A7FF;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.nijet2 p{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}

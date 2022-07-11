@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Namaz
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--<link rel="stylesheet" href="stars.css">-->
+</head>
+<body>
+<div id="topnav" class="navbar">
+  <a href="#" class="logo">
+    NAMAZ
+  </a>
+  <div class="navbar-right menu">
+    <a href="#namaz" class="active">
+      Namazi
+    </a>
+    <a href="#abdest">Abdest</a>
+    <a href="#contact">
+      Kontakt
+    </a>
+    <a href="#ajeti">
+      Ajeti
+    </a>
+  </div>
+  <div class="navbar-right">
+    <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<div id="slideshow-container" class="slideshow-container">
+  <div class="slide-item bgimg fade" style="background-image: url('https://th.bing.com/th/id/R.aaf4cf6e346b4c814b5c65c2ff166a44?rik=oRuYIQ%2forT5cPw&pid=ImgRaw&r=0');">
+    <div class="caption">
+      <p>   
+        "I molitvu obavljajte i zekat dajite, a za dobro koje za sebe pripremite naći ćete nagradukod Allaha, jer Allah dobro vidi ono što radite."
+          (El-Bekare,110.)
+      </p>
+    </div>
+  </div>
+
+  <div class="slide-item bgimg fade" style="background-image: url('https://th.bing.com/th/id/R.9b3302201c8e6e37e9950d38ca304407?rik=sU7pY6k3BB3Muw&pid=ImgRaw&r=0');">
+    <div class="caption">
+      <p>
+        "Vjernici, tražite sebi pomoći u strpljivosti i obavljanju molitve! Allah je doista na strani 
+          strpljivih."(El-Bekare,153.)
+      </p>
+    </div>
+  </div>
+  <div class="slide-item bgimg fade" style="background-image: url('https://th.bing.com/th/id/R.c5e1373a6fa7c631db7a355bb1b5ff7e?rik=lgoLcth%2b15ZVkg&pid=ImgRaw&r=0');">
+    <div class="caption">
+      <p>
+        "One koji, ako im damo vlast (i moć) na Zemlji, uspostavljaju (i obavljaju) namāz i daju zekāt, i naređuju dobro, a odvraćaju od nevaljalog. A Allāhovo je okončanje stvari."
+          (El-Hadždž,41.)
+      </p>
+    </div>
+  </div>
+
+  <div id="slide-control" class="slide-control">
+    <span class="dot" onclick="chooseSlide(0)"></span>
+    <span class="sdot" onclick="chooseSlide(1)"></span>
+    <span class="dot" onclick="chooseSlide(2)"></span>
+  </div>
+</div>
+<section>
+
+<section id="namaz" class="namazi" style="background-color: #2F3238;">
+  <header>
+    <div class="glavni-naslov" >
+      <h3 style="text-align: center;
+      color: white;
+      font-size: 1cm;
+      margin-top: -1rem;">Dnevni Namazi</h3>
+    </div>
+  </header>
+
+  <section class="wrapper">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+  </section>
+    
+  </div>  
+  <div class="container">
+    <div class="row">
+      <div class="image">
+        <img src="1.jpg" alt="">
+        <div class="details">
+          <h2 style="font-weight: bold;">Sabah <span></span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="more">
+            <a href="sabah/sabah.html" class="read-more">Pogledaj<span> vise</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="3.jpg" alt="">
+        <div class="details">
+          <h2 style="font-weight: bold;">Podne <span></span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="more">
+            <a href="podne/podne.html" class="read-more">Pogledaj <span> jos</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="image">
+        <img src="4.jpg" alt="">
+        <div class="details">
+          <h2 style="font-weight: bold;">Ikindija <span></span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="more">
+            <a href="#" class="read-more">Pogledaj<span> jos</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="5.jpg" alt="">
+        <div class="details">
+          <h2 style="font-weight: bold;">Akšam<span></span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="more">
+            <a href="#" class="read-more">Pogledaj <span> jos</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="6.jpg" alt="">
+        <div class="details">
+          <h2 style="font-weight: bold;">Jacija <span></span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="more">
+            <a href="#" class="read-more">Pogledaj <span> jos</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Section:Abdest-->
+  <section class="abdest" id="abdest">
+    <div class="naslov">
+      <h3 style="text-align: center;
+      color: white;
+      font-size: 1.3cm;
+      margin-top: 4rem;">Abdest</h3>
+    </div>
+  </section>
+  
+</section>
+<form id="contact-form" method="post"></form>
+     <section  class="contact" id="contact">
+      </div>
+         <div class="title reveal">
+           <h2 style="color: white;
+           text-align: center;"class="section-title">Kontakt</h2>
+         </div>
+           <div class="row">
+             <div class="contact-form reveal">
+               <h3 style="color: white;">Pošalji poruku</h3>
+               <div class="input-box">
+                 <input type="text" id="email" name="mail" value="" placeholder="Email">
+               </div>
+               <div class="input-box">
+                 <input type="text" name="name" id="name" placeholder="Ime">
+               </div>
+               <div class="input-box">
+                 <input type="text" name="subject" id="text" value="" placeholder="Text">
+               </div>
+               <div class="input-box">
+               </div>
+               <div class="input-box">
+                 <input type="submit" class="send-btn" name="" value="Pošalji"/>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+
+<script src="index.js"></script>
+
+</body>
+</html>
