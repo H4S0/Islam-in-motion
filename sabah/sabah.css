@@ -5,7 +5,6 @@ body{
   }
    .services .content{
     display: flex;
-    margin-top: 5rem;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -99,3 +98,48 @@ body{
   text-align: center;
   margin-top: 2rem;
 }
+
+.ajet p{
+  color: #50A7FF;
+  text-align: center;
+}
+
+.ajet strong {
+  color: white;
+  text-align: center;
+}
+
+
+.navbar {
+	background-color: rgba(61, 57, 57, 0);
+	padding: 10px 8px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 99;
+}
+
+.navbar a {
+	float: left;
+	color: #50A7FF;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+	padding: 12px;
+}
+
+.navbar .logo {
+	font-size: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar a:hover{
+  color: white;
+  transition: 1s;
+}
+
