@@ -2,4 +2,4 @@
 
 Website about prayer for Muslim
 
-Not finished yet
+95% completed
