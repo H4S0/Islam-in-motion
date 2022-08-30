@@ -51,12 +51,9 @@ body, html {
 }
 
 .navbar-right a:hover {
-	color: rgb(103, 149, 235);
+	color: #50A7FF;
 }
 
-.navbar-right a.active {
-	color: white;
-}
 
 .navbar-right a {
 	transition: color 0.2s ;
@@ -659,7 +656,21 @@ body, html {
 	font-size: 1.2cm;
 	margin-top: 3rem;
 }
+.naslov123 h3{
+	color: #fff;
+	text-align: center;
+	font-size: 1.3cm;
+}
 
+.ozikru p{
+	color: white;
+	text-align: center;
+}
+
+.ozikru span{
+	color: #50A7FF;
+	font-weight: 670;
+}
 .butoni {
 	display: flex;
 	align-items: center;
@@ -732,23 +743,9 @@ a {
 .section3{
 	margin-top: 3rem;
 }
-
-i {
-	font-size: 2.3rem;
-	letter-spacing: 7px;
-	margin-top: 2rem;
-	padding-right: 3px;
-}
-
-i:hover {
-	color: #50A7FF;
-	transition: color  ease;
-	font-size: 30px;
-}
    
 h6{
 	font-size: 22px;
 	margin-top: 3.2rem;
-	color: #1470E1;
-  
+	color: #fff;
 }
