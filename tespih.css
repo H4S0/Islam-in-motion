@@ -1,0 +1,31 @@
+.tespih {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bead-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bead {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 5px;
+  }
+  
+  .bead.active {
+    background-color: #50A7FF;
+  }
+  
+  .count {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  
