@@ -18,18 +18,28 @@
     <span>N</span><span>A</span><span>M</span><span>A</span><span>Z</span>
   </a>
   <div class="navbar-right menu">
-    <a href="#namaz">
+    <a id="namaz-naslov" class="tekstnavbar" href="#namaz">
       Namazi
     </a>
-    <a href="#abdest">Abdest</a>
-    <a href="#sure">
+    <a href="#abdest" id="abdest-naslov">Abdest</a>
+    <a id="sure-naslov" class="tekstnavbar" href="#sure">
       Sure
     </a>
-    <a href="#zikr">
+    <a class="tekstnavbar" id="zikr-naslov" href="#zikr">
       Zikr
     </a>
-  <a href="/tespih.html">Tespih</a>
+  <a class="tekstnavbar" href="/tespih.html">Tespih</a>
     <a href="/kuran/kuran.html">Kur'an</a>
+  </div>
+  <div class="radio-inputs">
+    <label class="radio">
+      <input type="radio" name="radio" value="en" checked="" onclick="translate('bs')">
+      <span class="name">Bosanski</span>
+    </label>
+    <label class="radio">
+      <input type="radio" name="radio" value="bs" onclick="translate('en')">
+      <span class="name">English</span>
+    </label>
   </div>
   <div class="navbar-right">
     <a href="javascript:void(0);" class="icon" onclick="showMenu()">
@@ -346,5 +356,6 @@ Takodjer je Poslanik, sallallahu alejhi ve sellem, kazao: “Ko na kraju svakog 
       <button onclick="scrollgore()"  id="gore" title="Go to top">Gore</button>
     <script src="index.js"></script>
     <script src="scroll.js"></script>
+    <script src="prijevod.js"></script>
 </body>
 </html>
