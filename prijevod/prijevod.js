@@ -1,24 +1,34 @@
-var englishRadio = document.querySelector('input[name="radio"][value="en"]');
-var bosnianRadio = document.querySelector('input[name="radio"][value="bs"]');
+function loadTranslationData(language, callback) {
+  var xhr = new XMLHttpRequest();
+  xhr.overrideMimeType("application/json");
+  xhr.open("GET", language + ".json", true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var translationData = JSON.parse(xhr.responseText);
+      callback(translationData);
+    }
+  };
+  xhr.send(null);
+}
 
-englishRadio.addEventListener('change', function() {
-  if (englishRadio.checked) {
-    translate('en');
+function translate(targetLanguage) {
+  var translationFile;
+
+  if (targetLanguage === "bs") {
+    translationFile = "bs.json";
+  } else if (targetLanguage === "en") {
+    translationFile = "en.json";
   }
-});
 
-bosnianRadio.addEventListener('change', function() {
-  if (bosnianRadio.checked) {
-    translate('bs');
-  }
-});
-
-function translate(language) {
-    var elements = Object.keys(translations[language]);
-    elements.forEach(function(elementId) {
-      var element = document.getElementById(elementId);
-      if (element) {
-        element.textContent = translations[language][elementId];
+  loadTranslationData(translationFile, function (translationData) {
+    var elementsToTranslate = document.querySelectorAll('[data-translate]');
+    for (var i = 0; i < elementsToTranslate.length; i++) {
+      var element = elementsToTranslate[i];
+      var translationKey = element.dataset.translate;
+      var translatedText = translationData[translationKey];
+      if (translatedText) {
+        element.textContent = translatedText;
       }
-    });
+    }
+  });
 }
