@@ -407,7 +407,7 @@ body, html {
   }
   
   
-  .services .content .carddd{
+  .services .content .card{
 	background: none;
 	width: 340px;
 	margin: 100px;
@@ -421,7 +421,7 @@ body, html {
   }
  
   
-  .services .content .carddd .info{
+  .services .content .card .info{
 	text-align: center;
 	font-size: large;
 	margin-top: 2.3rem;
@@ -429,7 +429,7 @@ body, html {
 	color: white;
   }
   
-  .services .content .carddd .info h3{
+  .services .content .card .info h3{
 	color: #50A7FF;
 	font-size: 1.2em;
 	font-weight: 700;
