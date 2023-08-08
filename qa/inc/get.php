@@ -3,6 +3,34 @@
         <?= $message ?>
     </div>
 <?php endif ?>
+<link rel="stylesheet"  href="/style.css">
+
+<div id="topnav" class="navbar">
+  <a href="#" class="logo">
+    <span>N</span><span>A</span><span>M</span><span>A</span><span>Z</span>
+  </a>
+  <div class="navbar-right menu">
+    <a data-translate="namaz-naslov" class="tekstnavbar" href="#namaz">
+      Namazi
+    </a>
+    <a href="#abdest" id="abdest-naslov">Abdest</a>
+    <a data-translate="sure-naslov" class="tekstnavbar" href="#sure">
+      Sure
+    </a>
+    <a class="tekstnavbar" data-translate="zikr-naslov" href="#zikr">
+      Zikr
+    </a>
+  <a class="tekstnavbar" href="/tespih.html" data-translate="tespih-naslov">Tespih</a>
+    <a href="/qa/inc/get.php" data-translate="qa">Q&A</a>
+  </div>
+  <div class="navbar-right">
+    <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+      <i style=" 
+      margin-top: -2rem;
+      " class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
 
 <form action="index.php" method="post">
     <header>
@@ -18,7 +46,7 @@
     <div>
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" value="<?=$inputs['email']?? '' ?>" placeholder="Email">
-        <small>><?= $errors['email']?? '' ?></small>
+        <small><?= $errors['email']?? '' ?></small>
     </div>
 
     <div>
@@ -28,14 +56,9 @@
     </div>
 
     <div>
-        <label for="message">Message:</label>
+        <label for="message">Poruka:</label>
         <textarea id="message" name="message" rows="5"><?= $inputs['message'] ?? '' ?></textarea>
         <small><?= $errors['message'] ?? '' ?></small>
     </div>
-
-    <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
-        <input type="text" name="nickname" id="nickname" class="user-cannot-see" tabindex="-1" autocomplete="off">
-    </label>
-
     <button type="submit">Send Message</button>
 </form>
